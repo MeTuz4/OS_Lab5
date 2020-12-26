@@ -9,3 +9,4 @@ a="$(cat test888)"
 echo "${a//./,}" > "test888"
 a="$(cat test999)"
 echo "${a//./,}" > "test999"
+echo "$(grep "mem.bash" ./test222)" > test666
