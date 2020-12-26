@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "" > test222
+num=0
+while [[ $num -ne 120 ]]
+do
+echo "$(top -b -n 1 | head -n 12 | tail -n 9)" >> test222
+echo "" >> test222
+let num=$num+1
+sleep 1
+done
