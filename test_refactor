@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "$(grep "MiB Mem" ./test222)" > test777
+echo "$(grep "MiB Swap" ./test222)" > test888
+echo "$(grep -v "MiB" ./test222)" > test999
