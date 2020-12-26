@@ -3,3 +3,9 @@
 echo "$(grep "MiB Mem" ./test222 | awk '{print $4,$6,$8,$10}')" > test777
 echo "$(grep "MiB Swap" ./test222 | awk '{print $3,$5,$7,$9}')" > test888
 echo "$(grep -v "MiB" ./test222)" > test999
+a="$(cat test777)"
+echo "${a//./,}" > "test777"
+a="$(cat test888)"
+echo "${a//./,}" > "test888"
+a="$(cat test999)"
+echo "${a//./,}" > "test999"
