@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "" > report.log
+#echo "" > report.log
 declare -a array
 counter=0
 while [ 0 ]
@@ -11,7 +11,8 @@ do
 #    then
 #	echo $counter >> report.log
 #    fi
-    if [[ $counter -eq 30000000 ]]
+#    if [[ $counter -eq 3000000 ]]
+    if [[ $counter -eq 1200000 ]]
     then
 	break
     fi
