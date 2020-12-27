@@ -12,3 +12,6 @@ echo "${a//./,}" > "test999"
 echo "$(grep "mem.bash" ./test222)" > test666
 a="$(cat test666)"
 echo "${a//./,}" > "test666"
+echo "$(grep "mem2.bash" ./test222)" > test555
+a="$(cat test555)"
+echo "${a//./,}" > "test555"
